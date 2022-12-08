@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --bg-color: rgb(17, 24, 141);
+    --bg-color-varient: rgb(13, 17, 102);
+    --primary-color: rgb(79, 249, 170);
+    --primary-color-varient: rgb(162, 117, 193);
+    --filler-color-lg: rgb(79, 173, 255);
+
+    --container-width-lg: 75%;
+    --container-width-md: 85%;
+    --container-width-sm: 90%;
+
+    --transition: all 400ms ease;
+
+    --hover-color: rgb(136, 73, 158);
+}
+
+/* variables for color accessed using var, such as -> color: var(--bg-color); */
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    background: var(--bg-color);
+    color: var(--primary-color);
+    line-height: 1.5;
+    background-image: url('./assets/bkg.png');
+}
+
+/* ============================================= */
+
+.container {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+section {
+    margin-top: 8rem;
+    height: 100vh;
+}
+
+section > h2,
+section > h5 {
+    text-align: center;
+    color: var(--filler-color-lg);
+}
+
+section > h2 {
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+}
+
+.filler-color {
+    color: var(--filler-color-lg);
+}
+
+a {
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--hover-color);
+}
+
+.btn {
+    width: max-content;
+    display: inline-block;
+    color: var(--primary-color);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--primary-color);
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background: var(--hover-color);
+    color: var(--bg-color);
+    border-color: transparent;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: var(--bg-color);
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* media queries for responsive webpage - medium sizes */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: var(--container-width-md);
+    }
+
+    section {
+        margin-top: 6rem;
+    }
+}
+
+/* media queries for responsive webpage - medium sizes */
+@media screen and (max-width: 600px) {
+    .container {
+        width: var(--container-width-sm);
+    }
+
+    section > h2 {
+        margin-bottom: 2rem;
+    }
+}
