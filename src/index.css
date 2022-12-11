@@ -15,7 +15,7 @@
     --bg-color-varient: rgb(13, 17, 102);
     --primary-color: rgb(79, 249, 170);
     --primary-color-varient: rgb(162, 117, 193);
-    --filler-color-lg: rgb(79, 173, 255);
+    --filler-color: rgb(231, 247, 152);
 
     --container-width-lg: 75%;
     --container-width-md: 85%;
@@ -42,6 +42,7 @@ body {
     color: var(--primary-color);
     line-height: 1.5;
     background-image: url('./assets/bkg.png');
+    background-attachment: fixed;
 }
 
 /* ============================================= */
@@ -67,7 +68,7 @@ section {
 section > h2,
 section > h5 {
     text-align: center;
-    color: var(--filler-color-lg);
+    color: var(--filler-color);
 }
 
 section > h2 {
@@ -76,7 +77,7 @@ section > h2 {
 }
 
 .filler-color {
-    color: var(--filler-color-lg);
+    color: var(--filler-color);
 }
 
 a {

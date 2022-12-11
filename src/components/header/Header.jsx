@@ -5,6 +5,8 @@ import CTA from './CTA'
 import topPic from '../../assets/newTopPic.jpeg'
 import Socials from './Socials'
 import {FaLongArrowAltRight} from 'react-icons/fa'
+import {IoRocket} from 'react-icons/io'
+
 
 const Header = () => {
   return (
