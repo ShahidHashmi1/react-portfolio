@@ -1,0 +1,86 @@
+.firstPara {
+    color: var(--filler-color);
+}
+
+.aboutContainer {
+    display: grid;
+    grid-template-columns: 30% 40%;
+    gap: 15%;
+}
+
+.aboutMe {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    background: linear-gradient(
+        45deg,
+        transparent,
+        var(--primary-color),
+        transparent
+    );
+    display: grid;
+    place-items: center;
+
+}
+
+.aboutMeImg {
+    border-radius: 2rem;
+    overflow: hidden;
+    transform: rotate(5deg);
+    transition: var(--transition);
+}
+
+.aboutMeImg:hover {
+    transform: rotate(0deg);
+}
+
+.bioCards {
+    background: var(--bg-color-varient);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 2rem;
+    text-align: center;
+}
+
+.bioCards:hover {
+    background: transparent;
+    border-color: var(--primary-color-varient);
+    cursor: default;
+}
+
+@media screen and (max-width: 1024px) {
+    .aboutContainer {
+       grid-template-columns: 1fr;
+       gap: 0;
+    }
+
+    .aboutMe {
+        width: 50%;
+        margin: 2rem auto 4rem;
+    }
+
+    .bioContent {
+        margin: 1rem 0 1.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .aboutMe {
+        width: 65%;
+        margin: 0 auto 3rem;
+    }
+
+    .bioCards {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .bioContent {
+        text-align: center;
+    }
+
+    .bioContent p {
+        margin: 1.5rem 0;
+    }
+}

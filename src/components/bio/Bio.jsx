@@ -1,12 +1,10 @@
-import React from 'react'
-import './bio.css'
-import headshot from '../../assets/headshot-min.jpg'
+import React from 'react';
+import './bio.css';
+import headshot from '../../assets/headshot-min.jpg';
 
 const Bio = () => {
   return (
-    <section id='bio'>
-      <h1>Bio</h1>
-
+    <section id="bio">
       <div className="container aboutContainer">
         <div className="aboutMe">
           <div className="aboutMeImg">
@@ -15,26 +13,27 @@ const Bio = () => {
         </div>
         <div className="bioContent">
           <div className="bioCards">
-            {/* individual articles for each thing, aboutme blurb, technologies etc. */}
-            <article className='aboutMeCard'>
-              
-            </article>
-            <article className='techCard'>
-
-            </article>
-            <article className='aboutMeCard'>
-
-            </article>
+              <article className="aboutMeCard"></article>
+            <p className='firstPara'>
+              This portfolio showcases some of my abilities and projects, but to summarize the purpose of the page and who I am:
+            </p>
+            <br/>
+            <p>
+              An application developer with a track record of working in rapidly
+              changing environments, while adapting and learning quickly to
+              accomplish team-oriented tasks. I am eager to transfer my skills to
+              a similarly exciting and evolving industry, while also expanding on
+              my existing programming comprehension with a reputable organization.
+              I am seeking an entry-level role as a junior developer. It is my
+              hope to learn and grow to a senior level or higher within the
+              organization and become a primary contributor that the organization
+              can rely on.
+            </p>
           </div>
-
-          <p>
-            On a professional level - I began my career in the sales realm, where I developed an innate ability to work well in a team environment to accomplish common goals, while maintaining communication and collaboration. Working prodominently in the financial services sector, this has allowed me to gain access to some very interesting softwares and processes that the typical person might not be exposed to. Without knowing at the time, I was able to get ahead in my career by using software to streamline my day-to-day activities. An example of this would be me reading deep into the documentation about how to query certain fields, to then export a customized report that had a certain file format that was readable in another program... Little did I know that I was already doing what developers do every single day: reading documentation, experimenting, testing, then implementing. 
-          </p>
-
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Bio
+export default Bio;

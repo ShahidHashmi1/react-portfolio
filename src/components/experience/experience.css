@@ -1,0 +1,80 @@
+.techIcons ul > li {
+    display: inline-block;
+    font-size: 4rem;
+    padding: 1rem 1rem;
+    margin: 1.5 0;
+}
+
+.experienceContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.experienceContainer > div {
+    background: var(--bg-color-varient);
+    border: 1px solid transparent;
+    border-radius: 2rem;
+    padding: 2.4rem 5rem;
+    margin: 2rem;
+    transition: var(--transition);
+}
+
+.experienceContainer > div:hover {
+    background: transparent;
+    border-color: var(--primary-color-varient);
+    cursor: default;
+    color: var(--filler-color);
+}
+
+.iconHead, .experienceContainer > div h3 {
+    color: var(--primary-color-varient);
+    font-size: larger;
+}
+
+.icon {
+    font-size: x-large;
+    margin: 0.3rem;
+}
+
+
+.experienceContainer > div h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--primary-color)
+}
+
+.experienceContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1.3rem;
+}
+
+/* media queries */
+
+@media screen and (max-width: 1024px) {
+    .experienceContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .experienceContainer > div {
+        width: 80%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+
+    .experienceContent {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .experienceContainer {
+        gap: 1rem;
+    }
+
+    .experienceContainer > div {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+}
