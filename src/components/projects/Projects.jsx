@@ -1,10 +1,14 @@
 import React from 'react'
 import './projects.css'
-import IMG1 from '../../assets/planet1.avif'
-import IMG2 from '../../assets/planet2.avif'
-import IMG3 from '../../assets/planet3.avif'
-import IMG4 from '../../assets/planet4.avif'
-import IMG5 from '../../assets/planet6.avif'
+import IMG1 from '../../assets/portPic1.png'
+import IMG2 from '../../assets/portPic2.png'
+import IMG3 from '../../assets/portPic3.png'
+import IMG4 from '../../assets/portPic4.png'
+import IMG5 from '../../assets/portPic5.png'
+import IMG6 from '../../assets/portPic6.png'
+import IMG7 from '../../assets/portPic7.png'
+import IMG8 from '../../assets/portPic8.png'
+import IMG9 from '../../assets/portPic9.png'
 
 const projectArr = [
   {
@@ -44,28 +48,28 @@ const projectArr = [
   },
   {
     id: 6,
-    image: IMG1,
+    image: IMG6,
     title: 'Txt editor PWA',
     github: 'https://github.com/ShahidHashmi1/PWA-text-editor',
     live: 'https://txt-editor-pwa.herokuapp.com/',
   },
   {
     id: 7,
-    image: IMG2,
+    image: IMG7,
     title: 'Developer Quiz',
     github: 'https://github.com/ShahidHashmi1/dev-quiz',
     live: 'https://shahidhashmi1.github.io/dev-quiz/',
   },
   {
     id: 8,
-    image: IMG3,
+    image: IMG8,
     title: 'README.md Generator',
     github: 'https://github.com/ShahidHashmi1/generate-readme',
     live: 'https://github.com/ShahidHashmi1/generate-readme',
   },
   {
     id: 9,
-    image: IMG4,
+    image: IMG9,
     title: 'Random Password Generator',
     github: 'https://github.com/ShahidHashmi1/Password-Generator',
     live: 'https://shahidhashmi1.github.io/Password-Generator/',
@@ -88,8 +92,8 @@ const Projects = () => {
               </div>
                 <h3>{title}</h3>
                 <div className="projectItem-cta">
-                <a href={github} target='_blank' className='btn'>GitHub Repository</a>
-                <a href={live} target='_blank' className='btn btn-primary'>Live Link (if available)</a>
+                <a href={github} target='_blank' className='btn' rel="noreferrer">GitHub Repository</a>
+                <a href={live} target='_blank' className='btn btn-primary' rel="noreferrer">Live Link (if available)</a>
                 </div>
             </article>
           )

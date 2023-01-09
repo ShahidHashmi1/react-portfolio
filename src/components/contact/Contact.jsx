@@ -15,24 +15,17 @@ const Contact = () => {
   };
 
   return (
+    <>
+
     <section id='contact'>
       <h5>Get In Touch!</h5>
       <h2>Contact Me Here</h2>
 
       <div className="container contactContainer">
         <div className="contactOptions">
-          
-          {/* <article className="contactOption">
-            <MdOutlineEmail className='contactOptionIcon'/>
-            <h4>Email</h4>
-            <h5>Email</h5>
-            <a href='mailto:hashmi.pgh@gmail.com'>Send Email</a>
-          </article> */}
-
-        {/* will add other options besides just email with articles */}
 
         </div>
-        {/* end of options */}
+
         <form ref={form} onSubmit={sendEmail}>
           <input type='text' name='name' placeholder='Your Full Name' required />
           <input type='email' name='email' placeholder='Your Email' required />
@@ -42,6 +35,18 @@ const Contact = () => {
       </div>
 
     </section>
+
+    <div className="linebreaks">
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+    </div>
+
+    </>
   )
 }
 
